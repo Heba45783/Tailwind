@@ -1,0 +1,42 @@
+{
+  "name": "Heba Portfolio",
+  "short_name": "HebaPort",
+  "description": "Professional UI/UX Designer & Front-End Developer Portfolio",
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "auto",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon512_rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/cardd.jfif",
+      "sizes": "1280x720",
+      "type": "image/jfif",
+      "form_factor": "wide",
+      "label": "Desktop View"
+    },
+    {
+      "src": "assets/cardd.jfif",
+      "sizes": "720x1280",
+      "type": "image/jfif",
+      "form_factor": "narrow",
+      "label": "Mobile View"
+    }
+  ]
+}
