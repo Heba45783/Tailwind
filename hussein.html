@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بريكي جو - مركز الدعم والمساعدة</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link class="manifest" href="./manifest_and_icons/manifest.json">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="flex justify-between items-center px-4 md:px-12 py-4 bg-white shadow-sm flex-wrap">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-black text-[#004BFF]">Breiki<span class="text-[#FF6600]">Go</span></span>
+        </div>
+        <div class="flex gap-6 items-center">
+            <a href="index.html" class="text-gray-600 font-medium hover:text-[#004BFF] transition">الرئيسية</a>
+            <a href="#" class="text-[#004BFF] font-bold border-b-2 border-[#004BFF] pb-1">الدعم والمساعدة</a>
+        </div>
+    </nav>
+
+    <div class="bg-gradient-to-r from-[#004BFF] to-[#002699] text-white py-12 px-6 text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <h1 class="text-3xl md:text-4xl font-bold">مرحباً بك في مركز الدعم والمساعدة</h1>
+            <p class="text-blue-100 text-base">يسعدنا دائماً مساعدتك والاضطلاع على استفساراتك أو شكواك لحلها فوراً</p>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <section class="lg:col-span-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-fit">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="text-2xl">📝</span>
+                <h2 class="text-xl font-bold text-gray-900">تذكرة دعم جديدة</h2>
+            </div>
+            
+            <form class="space-y-5">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">نوع المشكلة *</label>
+                    <select class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#004BFF] transition">
+                        <option value="">اختر نوع الشكوى/الطلب</option>
+                        <option value="delivery">مشكلة مع المندوب / التوصيل</option>
+                        <option value="order">مشكلة في الطلب أو نقص عناصر</option>
+                        <option value="payment">مشكلة في الدفع أو الحساب</option>
+                        <option value="suggestion">اقتراحات وتطوير</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">رقم الطلب (اختياري)</label>
+                    <input type="text" placeholder="مثال: #81235" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#004BFF] transition text-left" dir="ltr">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">درجة الأهمية</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="cursor-pointer text-center p-2.5 bg-green-50 text-green-700 rounded-xl border border-transparent font-medium text-xs block">
+                            <input type="radio" name="priority" value="low" class="sr-only"> عادية
+                        </label>
+                        <label class="cursor-pointer text-center p-2.5 bg-orange-50 text-orange-700 rounded-xl border border-transparent font-medium text-xs block">
+                            <input type="radio" name="priority" value="medium" class="sr-only" checked> متوسطة
+                        </label>
+                        <label class="cursor-pointer text-center p-2.5 bg-red-50 text-red-700 rounded-xl border border-transparent font-medium text-xs block">
+                            <input type="radio" name="priority" value="high" class="sr-only"> عاجلة
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">اكتب تفاصيل المشكلة *</label>
+                    <textarea rows="4" placeholder="يرجى كتابة تفاصيل المشكلة هنا..." class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#004BFF] transition resize-none"></textarea>
+                </div>
+
+                <button type="button" class="w-full bg-[#004BFF] hover:bg-[#0036B8] text-white font-bold py-3.5 px-4 rounded-xl transition shadow-md shadow-blue-100 cursor-pointer text-center block">
+                    إرسال التذكرة 🚀
+                </button>
+            </form>
+        </section>
+
+        <section class="lg:col-span-2 space-y-4">
+            <div class="flex items-center gap-3 mb-2">
+                <span class="text-2xl">❓</span>
+                <h2 class="text-xl font-bold text-gray-900">الأسئلة الشائعة (FAQs)</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-base font-bold text-gray-900 mb-2"><span class="text-[#FF6600]">✦</span> كم هي المدة المستغرقة لتوصيل الطلب؟</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">تتراوح مدة التوصيل بين 25 إلى 45 دقيقة كحد أقصى بناءً على المسافة المحددة.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-base font-bold text-gray-900 mb-2"><span class="text-[#FF6600]">✦</span> كيف يمكنني تتبع خط سير المندوب؟</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">بمجرد قبول الطلب، يمكنك تتبع حركة المندوب مباشرة على الخريطة وحتى وصوله لباب منزلك.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="flex justify-between items-center px-4 md:px-12 py-6 bg-black flex-wrap gap-4 mt-12">
+        <div class="text-white font-medium text-sm">© 2026 BreikiGo. جميع الحقوق محفوظة</div>
+    </footer>
+
+    <script src="indexeddb.js"></script>
+    <script src="notifications.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js")
+        }
+    </script>
+</body>
+
+</html>
