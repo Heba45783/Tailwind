@@ -13,10 +13,10 @@
     <nav class="flex justify-between items-center px-4 md:px-12 py-6 bg-white flex-wrap">
         <div class="text-purple-700 font-bold text-2xl">Portfolio</div>
         <div class="flex gap-8 items-center">
-            <a href class="text-black font-medium hover:text-purple-700">Home</a>
-            <a href class="text-black font-medium hover:text-purple-700">Services</a>
-            <a href class="text-black font-medium hover:text-purple-700 ">Projects</a>
-            <a href class="text-black font-medium hover:text-purple-700 ">Contact</a>
+            <a href="#" class="text-black font-medium hover:text-purple-700">Home</a>
+            <a href="#" class="text-black font-medium hover:text-purple-700">Services</a>
+            <a href="#" class="text-black font-medium hover:text-purple-700 ">Projects</a>
+            <a href="#" class="text-black font-medium hover:text-purple-700 ">Contact</a>
             <button id="notify-btn" class="bg-purple-700 text-white p-2 rounded-full hover:bg-purple-900 transition shadow-lg flex items-center justify-center group" title="Enable Notifications">
             <span class="text-sm px-2 hidden md:inline">Notify Me</span>
             <span class="text-lg">🔔</span>
@@ -118,7 +118,7 @@
         <div class=" px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
            <button
                     class="bg-white text-black px-8 py-3 rounded-xl  font-bold hover:bg-gray-100 transition cursor-pointer">
-                  JavaScriptS
+                  JavaScript
                 </button>
             
         </div>
@@ -151,19 +151,21 @@
 <footer class="flex justify-between items-center px-4 md:px-12 py-6 bg-black flex-wrap">
         <div class="text-white font-medium text-xl">© 2026 MyPortfolio. All rights reserved</div>
         <div class="flex gap-8 items-center">
-            <a href class="text-white font-medium hover:text-purple-700">LinkedIn</a>
-            <a href class="text-white font-medium hover:text-purple-700">Github</a>
-            <a href class="text-white font-medium hover:text-purple-700 ">Email</a>
-            <a href class="text-white font-medium hover:text-purple-700 ">facebook</a>
+            <a href="#" class="text-white font-medium hover:text-purple-700">LinkedIn</a>
+            <a href="#" class="text-white font-medium hover:text-purple-700">Github</a>
+            <a href="#" class="text-white font-medium hover:text-purple-700 ">Email</a>
+            <a href="#" class="text-white font-medium hover:text-purple-700 ">facebook</a>
         </div>
 </footer>
   
 <script src="indexeddb.js"></script>
 <script src="notifications.js"></script>
  <script>
-      if("serviceWorker" in navigator){
-        navigator.serviceWorker.register("sw.js")
-      }
+      if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js");
+    });
+  }
 
 
     </script>
