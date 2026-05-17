@@ -8,6 +8,7 @@ self.addEventListener("install", (event) => {
         cache.addAll([
           "/",
           "index.html",
+          "hussein.html",
           "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4",
           "assets/1.png",
           "assets/cardd.jfif",
