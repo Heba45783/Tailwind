@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="manifest" href="./manifest_and_icons/manifest.json">
+</head>
+
+<body>
+    <nav class="flex justify-between items-center px-4 md:px-12 py-6 bg-white flex-wrap">
+        <div class="text-purple-700 font-bold text-2xl">Portfolio</div>
+        <div class="flex gap-8 items-center">
+            <a href class="text-black font-medium hover:text-purple-700">Home</a>
+            <a href class="text-black font-medium hover:text-purple-700">Services</a>
+            <a href class="text-black font-medium hover:text-purple-700 ">Projects</a>
+            <a href class="text-black font-medium hover:text-purple-700 ">Contact</a>
+            <button id="notify-btn" class="bg-purple-700 text-white p-2 rounded-full hover:bg-purple-900 transition shadow-lg flex items-center justify-center group" title="Enable Notifications">
+            <span class="text-sm px-2 hidden md:inline">Notify Me</span>
+            <span class="text-lg">🔔</span>
+        </button>
+        </div>
+    </nav>
+
+   <div class="bg-gradient-to-r from-purple-700 to-purple-900 mx-4 rounded-3xl overflow-hidden flex items-center min-h-[500px] px-6 md:px-12 py-10 flex-wrap">
+
+    <div class="w-full md:w-1/2 text-white space-y-6 text-center md:text-left mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+            Build Modern UI <br class="hidden md:block"> Experiences
+        </h1>
+        <p class="text-base md:text-lg opacity-90 font-medium">
+            Creating beautiful, fast, and responsive web interfaces.
+        </p>
+
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
+            <button class="bg-white text-purple-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition cursor-pointer">
+                View Work
+            </button>
+            <button class="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white hover:text-purple-700 transition cursor-pointer">
+                Contact Me
+            </button>
+        </div>
+    </div>
+
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div class="w-[90%] md:w-[85%] rounded-3xl overflow-hidden shadow-2xl">
+            <img src="assets/1.png" class="w-full h-full object-cover">
+        </div>
+    </div>
+</div>
+  
+
+    <div class="py-16 px-8 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 font-sans">Services</h2>
+
+    <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        
+        <div class="w-[300px] bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+            <img src="assets/cardd.jfif" alt="UI Design" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">UI Design</h3>
+                <p class="text-gray-600 text-sm">Modern and clean interface designs.</p>
+            </div>
+        </div>
+
+        <div class="w-[300px] bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+            <img src="assets/cardd.jfif" alt="Frontend" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Frontend Development</h3>
+                <p class="text-gray-600 text-sm">Responsive and scalable UI development.</p>
+            </div>
+        </div>
+
+        <div class="w-[300px] bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+            <img src="assets/cardd.jfif" alt="Performance" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Performance</h3>
+                <p class="text-gray-600 text-sm">Fast loading and optimized interfaces.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+     <div class="py-16 px-8 bg-gray-80 flex-wrap">
+    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 font-sans">Skills</h2>
+
+    <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        
+        <div class="px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
+            <button
+                    class="bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition cursor-pointer">
+                    Html
+                </button>
+            
+        </div>
+
+        <div class="px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
+            <button
+                    class="bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition cursor-pointer">
+                    TailwindCss
+                </button>
+            
+        </div>
+
+        <div class="  px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
+           <button
+                    class="bg-white text-black px-8 py-3 rounded-xl  font-bold hover:bg-gray-100 transition cursor-pointer">
+                   UIUX design
+                </button>
+            
+        </div>
+
+        <div class=" px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
+           <button
+                    class="bg-white text-black px-8 py-3 rounded-xl  font-bold hover:bg-gray-100 transition cursor-pointer">
+                  JavaScriptS
+                </button>
+            
+        </div>
+
+        <div class="px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-center hover:shadow-md transition">
+    <button class="bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition cursor-pointer">
+        Vue.js
+    </button>
+</div>
+
+    </div>
+    </div>
+
+     <div
+        class="bg-gradient-to-r from-purple-700 to-purple-900  mx-4  overflow-hidden flex items-center justify-center min-h-[200px] px-12 py-10 flex-wrap">
+
+        <div class="  text-white text-center space-y-6">
+            <h1 class="text-6xl font-bold ">
+                Let work Together
+            </h1>
+
+            <div class="flex justify-center pt-4">
+                <button
+                    class="bg-white text-purple-700 px-8 py-3 rounded-xl font-bold  justify-center bg-gray-100 transition cursor-pointer">
+                    Get in touch
+                </button>
+            </div>
+        </div>
+    </div>
+<footer class="flex justify-between items-center px-4 md:px-12 py-6 bg-black flex-wrap">
+        <div class="text-white font-medium text-xl">© 2026 MyPortfolio. All rights reserved</div>
+        <div class="flex gap-8 items-center">
+            <a href class="text-white font-medium hover:text-purple-700">LinkedIn</a>
+            <a href class="text-white font-medium hover:text-purple-700">Github</a>
+            <a href class="text-white font-medium hover:text-purple-700 ">Email</a>
+            <a href class="text-white font-medium hover:text-purple-700 ">facebook</a>
+        </div>
+</footer>
+  
+<script src="indexeddb.js"></script>
+<script src="notifications.js"></script>
+ <script>
+      if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("sw.js")
+      }
+
+
+    </script>
+</body>
+
+</html>
